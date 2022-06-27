@@ -1,0 +1,13 @@
+<div class="grid-table">
+    <div class="titles">
+        <h1>Title</h1>
+        <h1>Listen</h1>
+    </div>
+    {{#each tracks}}
+        <div class="row">   
+            <h2>{{this.name}}</h2>
+            <audio src="{{this.preview_url}}" controls></audio>
+        </div>
+    {{/each}}
+
+</div>
